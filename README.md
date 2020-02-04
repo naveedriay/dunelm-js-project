@@ -7,9 +7,12 @@ Dependencies include:
 
 Run the project using any of the following commands
 
-- testcafe chrome ./tests -S -s screenshots
-- testcafe chrome ./tests -s path=tests/screenshots,takeOnFails=true
+- testcafe chrome ./tests 
+- testcafe chrome ./tests -s takeOnFails=true,path=tests/screenshots
 
-- testcafe chrome ./tests -S -s screenshots --reporter html:tests/testreport.html
+- testcafe chrome ./tests -s takeOnFails=true --reporter html:tests/testreport.html
 - testcafe chrome ./tests -s path=tests/screenshots,takeOnFails=true --reporter html:tests/testreport.html
+
+For concurrent test execution
+- testcafe -c 2 chrome ./tests
 

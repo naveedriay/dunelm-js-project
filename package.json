@@ -13,11 +13,11 @@
     "testcafe": "^1.8.1"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "testcafe chrome ./tests -s path=tests/screenshots,takeOnFails=true --reporter html:tests/testreport.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/naveedriay/dunelm-js-project.git"
+    "url": "https://github.com/naveedriay/dunelm-js-project.git"
   },
   "keywords": [
     "test"

@@ -16,3 +16,9 @@ Run the project using any of the following commands
 For concurrent test execution
 - testcafe -c 2 chrome ./tests
 
+To Run one test only among all the tests within first-test.js file
+- testcafe chrome ./tests -t "Remove CheckBox Test"
+
+To Run specific 10 selected tests among all (say 100) tests in .js file using regex 
+- testcafe chrome ./tests -T "Remove.*"
+- testcafe chrome ./tests -T "pattern1|pattern2|pattern3"
